@@ -30,7 +30,7 @@ public class Person implements Comparable<Person>{
 	}
 	
 	public String getInfo() {
-		return new String(code+" "+" "+name+" "+surname);
+		return new String(code+" "+name+" "+surname);
 	}
 	
 	public void addFriend(Person p) {

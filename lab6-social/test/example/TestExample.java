@@ -49,7 +49,7 @@ public class TestExample {
 		SocialGui gui = new SocialGui(f);
 		gui.setVisible(true);
 
-		Thread.sleep(10000);
+		Thread.sleep(100);
 
 		assertTrue(gui.isVisible());
 		gui.dispose();
