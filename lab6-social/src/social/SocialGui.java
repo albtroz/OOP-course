@@ -80,6 +80,7 @@ public class SocialGui extends JFrame {
 
         // Friends list
         friends = new JList<String>();
+        friends.setListData(new String[]{"friends", "..."});
         
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
@@ -137,7 +138,6 @@ public class SocialGui extends JFrame {
 			}
         	
         });
-        
         
         setContentPane(mainPanel);
         setLocationRelativeTo(null); // Center the frame on the screen

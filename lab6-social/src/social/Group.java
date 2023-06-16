@@ -2,7 +2,7 @@ package social;
 
 import java.util.TreeSet;
 
-public class Group {
+public class Group implements Comparable<Group> {
 	private String name;
 	private TreeSet<Person> subscribers;
 	
@@ -21,6 +21,11 @@ public class Group {
 	
 	public TreeSet<Person> getSubscribers() {
 		return subscribers;
+	}
+
+	@Override
+	public int compareTo(Group o) {
+		return name.compareTo(o.getName());
 	}
 	
 }

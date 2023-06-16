@@ -54,7 +54,7 @@ public class Social {
 			throw new NoSuchCodeException();
 		}
 		
-		if(!persons.containsKey(codePerson1)) {
+		if(!persons.containsKey(codePerson2)) {
 			throw new NoSuchCodeException();
 		}
 		
